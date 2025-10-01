@@ -5,6 +5,8 @@ module org.example.practicajsonyubo {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
+    requires javafx.base;
+    requires java.sql;
 
     opens org.example.practicajsonyubo to javafx.fxml;
     exports org.example.practicajsonyubo;

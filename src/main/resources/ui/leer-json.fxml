@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practicajsonyubo.Controller.PeliculaController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="568.0">
+         <children>
+            <ListView fx:id="lvListaPelicula" layoutX="323.0" layoutY="50.0" prefHeight="339.0" prefWidth="231.0" />
+            <Text layoutX="386.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado de peliculas" wrappingWidth="126.412109375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="35.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Director" />
+            <Text layoutX="40.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha" />
+            <Text layoutX="37.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Género" />
+            <Text layoutX="41.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Título" />
+            <TextField  fx:id="tfDirector" layoutX="98.0" layoutY="233.0" prefHeight="25.0" prefWidth="198.0" text="d" />
+            <TextField fx:id="tfTitulo" layoutX="98.0" layoutY="64.0" prefHeight="25.0" prefWidth="198.0" text="t" />
+            <TextField fx:id="tfFecha" layoutX="98.0" layoutY="117.0" prefHeight="25.0" prefWidth="77.0" text="f" />
+            <TextField fx:id="tfGenero" layoutX="98.0" layoutY="170.0" text="g" />
+            <Text fill="RED" layoutX="185.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMDB" wrappingWidth="77.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Button fx:id="btImportar" layoutX="121.0" layoutY="307.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="109.0" text="Importar" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
